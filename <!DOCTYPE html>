@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ihre freundliche Umzugsfirma</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0057a3;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .features {
+      margin-bottom: 2rem;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features ul li::before {
+      content: "✓";
+      color: #28a745;
+      margin-right: 10px;
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    form input, form select, form textarea, form button {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #0057a3;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background-color: #003d73;
+    }
+
+    @media (min-width: 768px) {
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      form textarea {
+        grid-column: span 2;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ihre freundliche Umzugsfirma</h1>
+    <p>Zuverlässig, umweltbewusst und transparent</p>
+  </header>
+
+  <div class="container">
+    <section class="features">
+      <ul>
+        <li>Schleppen Ihrer Möbel und Kartons inklusive</li>
+        <li>Einsatz moderner Elektroautos</li>
+        <li>Umweltfreundliche Abläufe</li>
+        <li>Faire Pauschalpreise ohne Überraschungen</li>
+        <li>Mietfahrzeug mit Fahrer verfügbar</li>
+        <li>Schnelle Benachrichtigung und Preisangebot</li>
+        <li>Kontakt per WhatsApp, E-Mail oder Telefon</li>
+      </ul>
+    </section>
+
+    <section class="form-section">
+      <h2>Angebot anfordern</h2>
+      <form>
+        <div class="form-grid">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="E-Mail" required>
+          <input type="tel" placeholder="Telefonnummer" required>
+          <select required>
+            <option>Bevorzugte Kontaktmethode</option>
+            <option>WhatsApp</option>
+            <option>E-Mail</option>
+            <option>Telefon</option>
+          </select>
+          <textarea placeholder="Was benötigen Sie?" rows="4" required></textarea>
+        </div>
+        <button type="submit">Angebot senden</button>
+      </form>
+    </section>
+  </div>
+
+</body>
+</html>
